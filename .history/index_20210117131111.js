@@ -92,28 +92,5 @@ function generateMarkdown(response) {
     ## License:
         For more information about te License, click on the link below.
         
-    -[License](https://opensource.org/licenses/${response.license})
-    
-    ## Questions:
-        For questions about the project, you can go to my GitHub page at the following link:
-        
-    - [GitHub Profile](https://github.com/${response.username})
-    
-    For additional questions please reach out to my email at: ${response.email}.
-    `;
+    -[License](https://opensource.org/licenses/${response.license})`
 }
-
-//function to initialize program
-async function init() {
-    try {
-        const response = await promptUser()
-        const readme = generateMarkdown(response)
-        await writeFileAsync("README.md", readMe)
-        console.log("Success!")
-    } catch (err) {
-        console.log(err)
-    }
-}
-
-//function call to initialize program
-init()

@@ -106,7 +106,7 @@ function generateMarkdown(response) {
 //function to initialize program
 async function init() {
     try {
-        const response = await promptUser()
+        const reponse = await promptUser()
         const readme = generateMarkdown(response)
         await writeFileAsync("README.md", readMe)
         console.log("Success!")
