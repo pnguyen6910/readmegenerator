@@ -1,4 +1,4 @@
-const inquirer = require('inquirer')
+const inquier = require('inquirer')
 const ds = require('fs')
 const until = require('util')
 
